@@ -1,0 +1,60 @@
+-- search
+select product_image, product_title, product_amount, product_desc, product_addinfo, product_price
+from products
+where product_desc like '%$search_query%';
+
+-- browse
+select product_cat, product_type, product_image, product_title, product_amount
+from products
+
+-- check the cart: if the product is in the cart, skip; else, insert the product into the cart
+(1). select *
+     from cart
+     where ip_add = customer_ip AND p_id = product_id;
+
+(2). insert into cart (p_id, ip_add, qty) values ('$pro_id', '$ip', 1);
+
+-- order
+select *
+from order
+where order_ip = '$ip';
+
+-- customer registration
+insert into customers (customer_ip, customer_email, customer_pass, customer_name, customer_state, customer_city,
+customer_contact, customer_address, customer_card, customer_payAddress) values ('$ip', '$c_email', '$c_pass',
+'$c_name', '$c_state', '$c_city', '$c_contact', '$c_address', '$c_card', '$c_payAddress');
+
+-- For deleting card by custoers
+update customers
+set customer_card = 0
+where customer_email = '$c_email';
+
+-- For deleteing address by custoers
+update customers
+set customer_address = ' '
+where customer_email = '$c_email';
+
+-- For modify the customer's card and address, we chose to edit them together and also we allow to let the
+-- customer modify every information except there email
+update customers
+set customer_ip = '$ip', customer_pass = '$c_pass', customer_name = '$c_name', customer_state = '$c_state',
+customer_city = '$c_city', customer_contact = '$c_contact', customer_address = '$c_address', customer_card = '$c_card'
+where customer_email = '$c_email';
+
+-- For adding products by staff
+insert into products (product_cat, product_type, product_title, product_price, product_desc, product_image, product_addinfo,
+  product_size, product_amount) values ('$product_cat', '$product_type', '$product_title', '$product_price', '$product_desc',
+  '$product_image', '$product_addinfo', '$product_size', '$product_amount');
+
+--For deleting products by staff
+delete from products
+where product_title = '$product_title';
+
+--For updating products information by staff
+update products
+set product_price = '$product_price', product_cat = '$product_cat', product_type = '$product_type', product_desc = '$product_desc',
+product_addinfo = '$product_addinfo', product_size = '$product_size', product_amount = '$product_amount'
+where product_title = '$product_title';
+
+--Adding stock to warehouse
+insert into stock (product_id, warehouse_id, stock) values ('$product_id', '$warehouse_id', '$stock');

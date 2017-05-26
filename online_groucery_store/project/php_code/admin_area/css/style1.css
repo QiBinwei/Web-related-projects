@@ -1,0 +1,136 @@
+body {
+	background: #333;
+	font-size: 62.5%;
+	color: #ccc;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	overflow-y: hidden;
+}
+section {
+	width: 90%;
+	min-width: 600px;
+	margin: 20em auto;
+	border: 1px solid #4e4e4e;
+	background: #03899C;
+}
+.line-1 {
+	font-size: 3em;
+	font-weight: 500;
+	margin-top: 1.2em;
+	opacity: 0;
+
+	
+}
+.line-2 {
+	font-size: 1.6em;
+	font-weight: 300;
+	opacity: 0;
+}
+.line-3 {
+	font-size: 7em;
+	font-weight: 100;
+	margin-top: .2em;
+	opacity: 0;
+}
+
+h1 {
+  font-size: 12em;
+  font-weight: 200;
+  margin: 0 auto;
+  color: #1e1e1e;
+  opacity: 0;
+}
+.fade-1 {
+  -webkit-animation-name: fade-1;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+   -webkit-animation-fill-mode:forwards;
+   -webkit-animation-delay: 1s;
+}
+
+@-webkit-keyframes fade-1 {/* Fades in line 1*/
+
+  0% {opacity: 0;}
+100% {opacity: 1;}
+
+}
+
+.fade-2 {
+  -webkit-animation-name: fade-2;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+   -webkit-animation-fill-mode:forwards;
+   -webkit-animation-delay: 3s;
+}
+
+@-webkit-keyframes fade-2 {/* Fades in line 2*/
+
+  0% {opacity: 0;}
+100% {opacity: 1;}
+
+}
+
+.fade-3 {
+  -webkit-animation-name: fade-3;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+   -webkit-animation-fill-mode:forwards;
+   -webkit-animation-delay: 3s;
+}
+
+@-webkit-keyframes fade-3 { /* Fades in line 3*/
+
+  0% {opacity: 0;}
+100% {opacity: 1;}
+
+}
+
+.fade-4 {
+  -webkit-animation-name: fade-4;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+   -webkit-animation-fill-mode:forwards;
+   -webkit-animation-delay: 6s;
+}
+
+@-webkit-keyframes fade-4 { /* Fades in line 3*/
+100% {opacity: 1; -webkit-transform: translate3d(0px, -500px,0px);}
+  0% {opacity: 0; -webkit-transform: translate3d(0px, -700px,0px);}
+
+
+}
+
+@-webkit-keyframes intro { /* intro for the section - lifts it up into place */
+
+100% {-webkit-transform: translate3d(0px,0px,0px); width: 300px;
+ background: #03899C;
+    }
+
+}
+.lifter {
+  -webkit-animation: intro 2s 1 forwards, lifter 2s 1 forwards 6s;
+
+}
+
+@-webkit-keyframes lifter {/*Outro for the section - moves it up offscreen */
+
+100% {-webkit-transform: translate3d(0,-700px,0px);}
+  0% {-webkit-transform: translate3d(0, 0px,0px);}
+
+}
+
+.lighten-up {/*lightens the body background */
+  -webkit-animation-name: lighten-up;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+   -webkit-animation-fill-mode:forwards;
+   -webkit-animation-delay: 6s;
+}
+
+@-webkit-keyframes lighten-up { /*lightens the body background */
+
+  0% {background: #1e1e1e;}
+100% {background: #fff;}
+
+}

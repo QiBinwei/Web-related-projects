@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+
+<html>
+
+ <head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 	<title>GameSpeed:CreatAccount</title>
+ 	<link rel="stylesheet" href="styles.css" type="text/css" />
+ </head>
+ 
+ <body>
+ <div id="container">
+     <header>
+     	<h1><a href="/">UserAccount</span></a></h1>
+         <h2>Gamers Website</h2>
+     </header>
+     <nav>
+     	<ul>
+         	<li class=""><a href="index.html">Home</a></li>
+             <li class=""><a href="XBox.html">XBox</a></li>
+             <li class=""><a href="PlayStation.html">Play Station</a></li>
+             <li class=""><a href="Wii.html">Wii</a></li>
+             <li class=""><a href="Games.html">Games</a></li>
+         
+             <li class=""><a href="Warranty.html">Warranty</a></li>
+             <li class="start selected"><a href="useraccount.html">UserAccount</a></li>
+             <li class="end"><a href="ShoppingCart.html">ShoppingCart</a></li>
+         </ul>
+     </nav>
+ 
+    <div id="body">		
+
+	<section id="content">
+
+	    <article>
+   <h2>GameSpeed Creat Account</h2>
+    <form method="POST" action="/BinweiQi/createAccountServlet">
+      <table cellpadding="0" cellspacing="5">
+        <tr><td colspan="2"><b>Personal Information</b></td></tr>
+        <tr>
+          <td>UserId</td><td><input type="text" name="userid" size="30"/></td>
+        </tr>
+        <tr>
+          <td>Password</td><td><input type="text" name="password" size="30"/></td>
+        </tr>
+        <tr>
+          <td>Name</td><td><input type="text" name="name" size="30"/></td>
+        </tr>
+
+        <tr>
+          <td>Email</td><td><input type="text" name="email" size="30" /></td>
+        </tr>
+        <tr>
+          <td>PhoneNumber</td><td><input type="text" name="phonenumber" size="13" /></td>
+        </tr>
+        <tr><td colspan="2"><hr /></td></tr>
+        <tr><td colspan="2"><b>Address Information</b></td></tr>
+        <tr>
+          <td>Address</td><td><input type="text" name="address" size="30" /></td>
+        </tr>
+
+        <tr>
+          <td>City</td><td><input type="text" name="city" size="30" /></td>
+        </tr>
+        <tr>
+          <td>State</td>
+          <td>
+            <select name="state">
+              <option value="IL">Illinois</option>
+              <option value="OH">Ohio</option>
+              <option value="IN">Indiana</option>
+              <option value="WI">Wisconsin</option>
+              <option value="MI">Michigan</option>
+            </select>
+            ZIP<input type="text" name="zip" size="5"/>
+          </td>
+        </tr>
+        <tr><td colspan="2"><hr /></td></tr>
+        <tr><td colspan="2"><b>Payment Method</b></td></tr>
+        <tr>
+          <td>Card Number</td><td><input type="text" name="creditcard" size="16" /></td>
+        </tr>
+        <tr>
+          <td>Choose a card type</td><td><input type="radio" name="ca_type" value="VisaCard" />VisaCard
+          &nbsp;<input type="radio" name="ca_type" value="MasterCard" checked="true" />MasterCard
+          &nbsp;<input type="radio" name="ca_type" value="Unionpay" />Unionpay</td>
+        </tr>
+
+            <td>CVV2 Number</td><td><input type="text" name="cvv2number" size="3" /></td>
+          </tr>
+
+        </tr>
+       
+          <td>&nbsp;</td>
+          <td>
+            <input type="submit" value="Submit" />
+            <input type="hidden" name="page_name" value="login" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  		</article>
+      </section>
+          
+      <aside class="sidebar">
+  	
+              <ul>	
+                 <li>
+                      <h4>Products</h4>
+                      <ul>
+                          <li><a href="XBox.html">XBox</a></li>
+                          <li><a href="PlayStation.html">Play Station</a></li>
+                          <li><a href="Wii.html">Wii</a></li>
+                          <li><a href="#">Games</a></li>
+                      
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <h4>About us</h4>
+                      <ul>
+  <li class="text">
+  	<p style="margin: 0;">Welcome to GameSpeed. </p>
+  	<p style="margin: 0;">We provide fun for all age gamers.</p>
+  </li>
+                      </ul>
+                  </li>
+                  
+                  <li>
+                  	<h4>Search site</h4>
+                      <ul>
+                      	<li class="text">
+                              <form method="get" class="searchform" action="#" >
+                                  <p>
+                                      <input type="text" size="25" value="" name="s" class="s" />
+                                      
+                                  </p>
+                              </form>	
+  						</li>
+  					</ul>
+                  </li>
+                  
+                  <li>
+                      <h4>Helpful Links</h4>
+                      <ul>
+                          <li><a href="http://www.w3schools.com/html/default.asp" title="premium templates">Learn HTML here</a></li>
+                          <li><a href="http://www.w3schools.com/css/default.asp" title="web hosting">Learn CSS here</a></li>
+                          
+                      </ul>
+                  </li>
+                  
+              </ul>
+  		
+      </aside>
+      
+  	<div class="clear"></div>
+  	</div>
+      
+  	<footer>
+  	
+          <div class="footer-content">
+              <ul>
+              	<li><h4>Dummy Link Section 1</h4></li>
+                  <li><a href="#">Dummy Link 1</a></li>
+                  <li><a href="#">Dummy Link 2</a></li>
+                  <li><a href="#">Dummy Link  3</a></li>
+  			</ul>
+             
+          <div class="clear"></div>
+          </div>
+  		
+          <div class="footer-bottom">
+              <p>CSP 595 - Enterprise Web Application - Tutorial 2</p>
+          </div>
+  		
+      </footer>
+  </div>  
+ </body>
+</html>

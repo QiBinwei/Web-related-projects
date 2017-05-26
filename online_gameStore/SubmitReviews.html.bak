@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>Write a review</title>
+</head>
+
+<body>
+
+<form method="get" action="SubmitReviews">
+
+<table>
+
+<tr>
+<td> Product Name: </td>
+<td> 
+<select name="productName">
+<option value="XBox360" selected>XBox 360</option>
+<option value="XBoxOne">XBox One</option>
+<option value="Playstation3">Playstation 3</option>
+<option value="Playstation4">Playstation 4</option>
+<option value="Wii">Wii</option>
+<option value="WiiU">Wii U</option>
+</td>
+</tr>
+
+<tr>
+<td> Product Category: </td>
+<td> 
+<select name="productCategory">
+<option value="gamingConsole" selected>Gaming Console</option>
+<option value="games">Games</option>
+</td>
+</tr>
+
+<tr>
+<td> Product Price: </td>
+<td><input type = "text" name = "productPrice" size = 10/> </td>
+</tr>
+
+<tr>
+<td> Retailer Name: </td>
+<td> 
+<select name="retailerName">
+<option value="GameSpeed" selected>GameSpeed</option>
+</td>
+</tr>
+
+<tr>
+<td> Retailer Zip: </td>
+<td><input type = "text" name = "retailerZip" size = 10 value="60616"/> </td>
+</tr>
+
+<tr>
+<td> Retailer CIty: </td>
+<td><input type = "text" name = "retailerCIty" size = 10 value="Chicago"/> </td>
+</tr>
+
+<tr>
+<td> Retailer State: </td>
+<td><input type = "text" name = "retailerState" size = 10 value="IL"/> </td>
+</tr>
+
+<tr>
+<td> Product On Sale: </td>
+<td><input type = "radio" name = "productOnSale" value="yes"/> Yes <input type = "radio" name = "productOnSale" value="no"/> No </td>
+</tr>
+
+<tr>
+<td> Manufacture Name: </td>
+<td><input type = "text" name = "manufactureName" size = 10 value="LG"/> </td>
+</tr>
+
+<tr>
+<td> Manufacture Rebate: </td>
+<td><input type = "radio" name = "manufactureRebate" value="yes"/> Yes <input type = "radio" name = "manufactureRebate" value="no"/> No </td>
+</tr>
+
+<tr>
+<td> User ID: </td>
+<td><input type = "text" name = "userID" size = 10/> </td>
+</tr>
+
+<tr>
+<td> User Age: </td>
+<td><input type = "text" name = "userAge" size = 10/> </td>
+</tr>
+
+<tr>
+<td> User Gender: </td>
+<td> <input type = "radio" name = "userGender" value = "Male"/> Male  <input type = "radio" name = "userGender" value = "Female"/> Female</td>
+</tr>
+
+<tr>
+<td> User Occupation: </td>
+<td><input type = "text" name = "userOccupation" size = 20/> </td>
+</tr>
+
+<tr>
+<td> Review Rating: </td>
+<td>
+<select name="reviewRating">
+<option value="1" selected>1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>  
+</td>
+</tr>
+
+<tr>
+<td> Review Date: </td>
+<td><input type = "text" name = "reviewDate" size = 10/> </td>
+</tr>
+
+<tr>
+<td> Review Text: </td>
+<td><textarea name="reviewText" rows="4" cols="50"> </textarea></td>
+</tr>
+
+<tr>
+<td> Submit: </td>
+<td><input type = "submit" value = "submit reviews"/> </td>
+</tr>
+
+</table>
+</form>
+
+<form action="Main.html">
+<input type = "submit" value = "Main Page"/>
+</form>
+
+</body>
+
+</html>

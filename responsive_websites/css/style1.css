@@ -1,0 +1,179 @@
+body {
+
+
+	font-size: 62.5%;
+
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	overflow-y: hidden;
+}
+section {
+	width: 90%;
+	min-width: 600px;
+	margin: 20em auto;
+	border: 1px solid ;
+
+}
+.line-1 {
+	font-size: 3em;
+	font-weight: 500;
+	margin-top: 1.2em;
+	opacity: 0;
+
+	
+}
+.line-2 {
+	font-size: 1.6em;
+	font-weight: 300;
+	opacity: 0;
+}
+.line-3 {
+	font-size: 7em;
+	font-weight: 100;
+	margin-top: .2em;
+	opacity: 0;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 600;
+  margin-left: 150px;
+  margin-right:150px;
+  padding: 20px;
+  border:10px solid white;
+  color: white;
+  opacity: 0;
+}
+
+#div1{
+position:fixed;
+top:0;
+left:0;
+bottom:0;
+right:0;
+z-index:-1;
+}
+#div1 > img {
+height:100%;
+width:100%;
+border:0;
+} 
+/*this two div sections are used for keeping the background as 
+the picture chossen in the html page*/
+
+@-webkit-keyframes fade-1 {/* Fades in line 1*/
+
+  0% {opacity: 0;}
+100% {opacity: 1;}
+
+}
+
+
+
+@-webkit-keyframes fade-2 {/* Fades in line 2*/
+
+  0% {opacity: 0;}
+100% {opacity: 1;}
+
+}
+
+.fade-3 {
+  -webkit-animation-name: fade-3;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+   -webkit-animation-fill-mode:forwards;
+   -webkit-animation-delay: 3s;
+}
+
+@-webkit-keyframes fade-3 { /* Fades in line 3*/
+
+  0% {opacity: 0;}
+100% {opacity: 1;}
+
+}
+
+.fade-4 {
+  -webkit-animation-name: fade-4;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+   -webkit-animation-fill-mode:forwards;
+   -webkit-animation-delay: 1s;
+}
+
+@-webkit-keyframes fade-4 { /* Fades in line 3*/
+100% {opacity: 1; -webkit-transform: translate3d(0px, -400px,0px);}
+  0% {opacity: 0; -webkit-transform: translate3d(0px, -600px,0px);}
+
+
+}
+
+@-webkit-keyframes intro { /* intro for the section - lifts it up into place */
+
+100% {-webkit-transform: translate3d(0px,0px,0px); width: 300px;
+ 
+    }
+
+}
+.lifter {
+  -webkit-animation: intro 2s 1 forwards, lifter 2s 1 forwards 6s;
+
+}
+
+@-webkit-keyframes lifter {/*Outro for the section - moves it up offscreen */
+
+100% {-webkit-transform: translate3d(0,-700px,0px);}
+  0% {-webkit-transform: translate3d(0, 0px,0px);}
+
+}
+
+.lighten-up {/*lightens the body background */
+  -webkit-animation-name: lighten-up;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+   -webkit-animation-fill-mode:forwards;
+   -webkit-animation-delay: 6s;
+}
+/*---------- media queries --------*/
+/*@media only screen and (min-width: 1200px){
+
+
+span{
+  font-size: 2em;
+}
+}*/
+
+@media only screen and (min-width: 900px) and (max-width: 1199px){
+
+
+span{
+  font-size:35px;
+}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 899px){
+
+
+span{
+  font-size: 20px;
+}
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 699px){
+
+
+span{
+
+  font-size: 10px;
+}
+
+@-webkit-keyframes lighten-up { /*lightens the body background */
+
+  0% {background: white;}
+100% {background="index.jpg";}
+
+}
+
+
+}

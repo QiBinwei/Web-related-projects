@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{ margin:0px; background:#999; }
+div#topbar{
+	background:-webkit-linear-gradient(#666, #000);
+	background:linear-gradient(#666, #000);
+	height:60px;
+}
+div#topbar > #logo{
+	float:left;
+	width:140px;
+	height:35px;
+	margin:8px 0px 0px 30px;
+	font-size:36px;
+	color:#999;
+}
+div#topbar > #sections_btn_holder{
+	float:left;
+	width:144px;
+	height:46px;
+	padding-top:16px;
+}
+div#topbar > #sections_btn_holder > button{ background:#F90;}
+div#topbar > #sections_panel{
+	position:absolute;
+	height:0px;
+	width:550px;
+	background:#000;
+	top:60px;
+	left:160px;
+	border-radius:0px 0px 8px 8px;
+	overflow:hidden;
+	z-index:10000;
+	transition: height 0.3s linear 0s;
+}
+div#topbar > #sections_panel > div{
+	background:#333;
+	padding:20px;
+	height:238px;
+	margin:10px;
+	color:#FC0;
+}
+</style>
+<script>
+function toggleNavPanel(x){
+    var panel = document.getElementById(x), navarrow = document.getElementById("navarrow"), maxH="300px";
+    if(panel.style.height == maxH){
+        panel.style.height = "0px";
+        navarrow.innerHTML = "&#9662;";
+    } else {
+        panel.style.height = maxH;
+        navarrow.innerHTML = "&#9652;";
+    }
+}
+</script>
+</head>
+<body>
+<div id="topbar">
+  <div id="logo">LOGO</div>
+  <div id="sections_btn_holder">
+    <button onclick="toggleNavPanel('sections_panel')">Navigator <span id="navarrow">&#9662;</span></button>
+  </div>
+  <div id="sections_panel">
+    <div>
+      Try adding things like more child div containers, links, buttons, menus, pictures, paragraphs, videos, etc... This area can display way more than just menu buttons or links. You will see a lot of modern sites even adding graphics, icons, animations and images to their drop down menus nowadays. So get creative partner.
+    </div>
+  </div>
+
+</div>  asldfjlasdfj;lasdjfl;asdfjk
+</body>  
+</html>

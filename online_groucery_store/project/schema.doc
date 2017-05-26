@@ -1,0 +1,85 @@
+CREATE TABLE customers (
+  customer_id int,
+  customer_ip varchar(255),
+  customer_email text,
+  customer_pass text,
+  customer_name varchar(255),
+  customer_state text,
+  customer_city text,
+  customer_contact varchar(255),
+  customer_address text,
+  customer_card int,
+  customer_payAddress text,
+  customer_balance int
+)
+
+CREATE TABLE categories (
+  cat_id int,
+  cat_title text
+)
+
+CREATE TABLE type (
+  type_id int,
+  parent_id int,
+  type_title varchar(255),
+  type_disc text
+)
+
+CREATE TABLE stock (
+  product_id int,
+  warehouse_id int,
+  stock int
+)
+
+CREATE TABLE suppliers (
+  supplier_id int,
+  supplier_name varchar(255),
+  supplier_address text,
+  supplier_item varchar(255),
+  supplier_price int
+)
+
+CREATE TABLE warehouse (
+  warehouse_id int,
+  warehouse_address text,
+  warehouse_capacity int,
+  warehouse_name text
+)
+
+CREATE TABLE staff (
+  staff_ip varchar(255),
+  staff_id int,
+  staff_email text,
+  staff_pass text,
+  staff_name varchar(255),
+  staff_address text,
+  staff_job varchar(255),
+  staff_salary int
+)
+
+CREATE TABLE products (
+  product_id int,
+  product_cat int,
+  product_type int,
+  product_title varchar(255),
+  product_price int,
+  product_desc text,
+  product_image text,
+  product_addinfo text,
+  product_size int,
+  product_amount int
+)
+
+CREATE TABLE order (
+  order_id int,
+  order_time datetime,
+  order_status varchar(255),
+  order_card int,
+  order_ip varchar(255)
+)
+
+CREATE TABLE cart (
+  p_id int,
+  ip_add varchar(255),
+  qty int
+)

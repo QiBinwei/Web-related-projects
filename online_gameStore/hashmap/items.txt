@@ -1,0 +1,15 @@
+Console,Microsoft,399
+Console,Microsoft,499
+Console,Nintendo,399
+Console,Nintendo,499
+Console,Wii,399
+Console,WiiU,299
+Game,ElectronicArts,29
+Game,ElectronicArts,39
+Game,Activision,29
+Game,Activision,39
+Game,TakeTwoInteractive,29
+Game,TakeTwoInteractive,39
+Accessories,Microsoft,99
+Accessories,Sony,99
+Accessories,Nintendo,99

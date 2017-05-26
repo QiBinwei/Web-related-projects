@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Write Review</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body>
+<div id="container">
+    <header>
+    	<h1><a href="/">GameSpeed</span></a></h1>
+        <h2>Gamers Website</h2>
+    </header>
+    <nav>
+    	<ul>
+        	<li class=""><a href="index.html">Home</a></li>
+            <li class=""><a href="XBox.html">XBox</a></li>
+            <li class=""><a href="PlayStation.html">Play Station</a></li>
+            <li class=""><a href="Wii.html">Wii</a></li>
+            <li class=""><a href="Games.html">Games</a></li>
+        
+            <li class=""><a href="Warranty.html">Warranty</a></li>
+            <li class=""><a href="useraccount.html">UserAccount</a></li>
+   
+			 <li class=""><a href="DataAnalytics.html">Trending&DataAnalytics</a></li>
+			 <li class="end"><a href="ShoppingCart.html">Cart</a></li>
+        </ul>
+    </nav>
+		
+        <div id="body">
+
+            <section id="content">
+
+                <article>
+
+                    <h2> Add Product Review</h2>
+
+                    <form method="post" class="searchform" action="SubmitReview">
+
+                        <table>
+
+                            <tr>
+                                <td> Product Category: </td>
+                                <td>
+                                    <select name="productCategory">
+                                        <option value="Console" selected>Game Console</option>
+                                        <option value="Game">Game</option>
+                                        <option value="Accessories">Accessories</option>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> Product Name: </td>
+                                <td>
+                                    <select name="productName">
+                                        <option value="XBOXONE">XBOX ONE</option>
+                                        <option value="XBOX360">XBOX 360</option>
+                                        <option value="PS3">PS 3</option>
+                                        <option value="PS4">PS 4</option>
+                                        <option value="WII">WII</option>
+                                        <option value="WII-U">WII-U</option>
+                                        <option value="FIFA">FIFA</option>
+                                        <option value="FORZA">FORZA</option>
+                                        <option value="NBA2K14">NBA2K14</option>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td> Product Price: </td>
+                                <td>
+                                    <input type="number" name="productPrice" size=10 class="s" /> </td>
+                            </tr>
+
+                            <tr>
+                                <td> Retailer Name: </td>
+                                <td>
+                                    <select name="retailerName">
+                                        <option value="GameSpeed" selected>GameSpeed</option>
+                                        <option value="Walmart">Walmart</option>
+                                        <option value="BestBuy">BestBuy</option>
+                                        
+                                </td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td> Retailer Zip code: </td>
+                                <td>
+                                    <input type="number" name="retailerZipcode" size=10/> </td>
+                            </tr>
+
+                            <tr>
+                                <td> Retailer City: </td>
+                                <td>
+                                    <input type="text" name="retailerCity" class="s" /> </td>
+                            </tr>
+
+                            <tr>
+                                <td> Retailer State: </td>
+                                <td>
+                                    <input type="text" name="retailerState" class="s" /> </td>
+                            </tr>
+
+                            <tr>
+                                <td> Product On Sale: </td>
+                                <td>
+                                    <input type="radio" name="productOnSale" value="Yes" /> Yes
+                                    <input type="radio" name="productOnSale" value="No" /> No</td>
+                            </tr>
+
+
+                            <tr>
+                                <td> Product Manufacturer: </td>
+                                <td>
+                                    <select name="consoleManufacturer">
+                                        <option value="Microsoft" selected>Microsoft</option>
+                                        <option value="Sony">Sony</option>
+                                        <option value="Nintendo">Nintendo</option>
+                                        <option value="ElectronicArts">Electronic Arts</option>
+                                        <option value="Activision">Activision</option>
+                                        <option value="TakeTwoInteractive">Take-Two Interactive</option>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> Manufacture Rebate: </td>
+                                <td>
+                                    <input type="radio" name="manufacturerRebate" value="Yes" /> Yes
+                                    <input type="radio" name="manufacturerRebate" value="No" /> No</td>
+                            </tr>
+
+
+
+                            <tr>
+                                <td> User ID: </td>
+                                <td>
+                                    <input type="text" name="userID" class="s" /> </td>
+                            </tr>
+
+                            <tr>
+                                <td> User Age: </td>
+                                <td>
+                                    <input type="number" name="userAge" class="s" /> </td>
+                            </tr>
+
+                            <tr>
+                                <td> User Gender: </td>
+                                <td>
+                                    <input type="radio" name="userGender" value="Male" /> Male
+                                    <input type="radio" name="userGender" value="Female" /> Female</td>
+                            </tr>
+
+                            <tr>
+                                <td> User Occupation: </td>
+                                <td>
+                                    <input type="text" name="userOccupation" class="s" /> </td>
+                            </tr>
+
+
+                            <tr>
+                                <td> Review Rating: </td>
+                                <td>
+                                    <select name="reviewRating">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td> Review Date: </td>
+                                <td>
+                                    <input type="date" name="reviewDate" size=10/> </td>
+                            </tr>
+
+                            <tr>
+                                <td> Review Text: </td>
+                                <td>
+                                    <textarea name="reviewText" rows="4" cols="50"> </textarea>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="submit" value="Submit Review" class="formbutton" /> </td>
+                                <td></td>
+                            </tr>
+
+                        </table>
+                    </form>
+
+                </article>
+
+            </section>
+
+			<aside class="sidebar">
+			
+					<ul>	
+					   <li>
+							<h4>Options</h4>
+							<ul>
+						<li><a href="XBox.html">XBox</a></li>
+                        <li><a href="PlayStation.html">Play Station</a></li>
+                        
+						<li><a href="Wii.html">Wii</a></li>
+                        <li><a href="Games.html">Games</a></li>
+						 <li><a href="DataAnalytics.html">Trending&DataAnalytics</a></li>
+							
+							</ul>
+						</li>
+						
+						<li>
+							<h4>About us</h4>
+							<ul>
+								<li class="text">
+									<p style="margin: 0;">This is a sample website created to demonstrate a standard enterprise web page.</p>
+								</li>
+							</ul>
+						</li>
+						
+						<li>
+							<h4>Search site</h4>
+							<ul>
+								<li class="text">
+									<form method="get" class="searchform" action="#" >
+										<p>
+											<input type="text" size="25" value="" name="s" class="s" />
+											
+										</p>
+									</form>	
+								</li>
+							</ul>
+						</li>
+						
+						<li>
+							<h4>Helpful Links</h4>
+							<ul>
+								<li><a href="http://www.w3schools.com/html/default.asp" title="premium templates">Learn HTML here</a></li>
+								<li><a href="http://www.w3schools.com/css/default.asp" title="web hosting">Learn CSS here</a></li>
+								
+							</ul>
+						</li>
+						
+					</ul>
+				
+			</aside>
+
+            <div class="clear"></div>
+        </div>
+
+        <footer>
+
+            <div class="footer-content">
+                <ul>
+                    <li>
+                        <h4>Dummy Link Section 1</h4>
+                    </li>
+                    <li><a href="#">Dummy Link 1</a>
+                    </li>
+                    <li><a href="#">Dummy Link 2</a>
+                    </li>
+                    <li><a href="#">Dummy Link  3</a>
+                    </li>
+                </ul>
+
+                <div class="clear"></div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>CSP 595 - Enterprise Web Application - Assignment#3</p>
+            </div>
+
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
